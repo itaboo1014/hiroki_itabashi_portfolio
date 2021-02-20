@@ -54,7 +54,7 @@
                     <div id="app-2">
                         <sliders-content v-for="slide in slides" v-key="slide.id">
                             <img v-bind:src="slide.image" alt="">
-                            <h2>{{ text }}</h2>
+                            <h2>{{ slide.text }}</h2>
                         </sliders-content>
                     </div>
                 </div>

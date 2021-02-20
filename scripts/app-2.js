@@ -5,7 +5,7 @@ var app2 = new Vue({
             { image: 'images/whois.jpg', text: 'who is hiroki itabashi' },
             { image: 'images/ssw.jpg', text: 'he is ssw' },
             { image: 'images/rec-engineer', text: 'he is enginner' },
-            { image: 'images/ssw.jpg', text: 'he is ssw' },
+            { image: 'images/ssw.jpg', text: 'he is ssw' }
         ]
     }
-}) 
+});
