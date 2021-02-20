@@ -34,9 +34,11 @@
     <header-nav>
         <div id="header-nav-area">
             <div id="app-1" class="header-link-btns pc"> 
-                <header-link-btn v-for="btn in btns" v-key="btn.id">
-                    <p class="header-link-btn" v-bind:class="btn.class">{{ btn.name }}</p>
-                </header-link-btn>
+                <header-btn-content v-for="btn in btns" v-key="btn.id">
+                    <div class="header-link-btn" v-bind:class="btn.class">
+                        <p>{{ btn.name }}</p>
+                    </div>
+                </header-btn-content>
             </div>
             <div class="header-menu-btn tab sp">
                 <span class=""></span>
@@ -118,7 +120,7 @@
     <script src="scripts/app-4.js"></script>
     <script src="scripts/app-5.js"></script>
 
-    
+
 </body>
 
 </html>

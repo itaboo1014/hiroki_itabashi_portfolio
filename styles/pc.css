@@ -41,6 +41,19 @@
   .container {
     width: 1000px;
   }
+  header-nav #header-nav-area {
+    width: 100%;
+    height: 100px;
+  }
+  header-nav #header-nav-area .header-link-btns {
+    text-align: center;
+  }
+  header-nav #header-nav-area .header-link-btns .header-link-btn {
+    display: inline-block;
+  }
+  header-nav #header-nav-area .header-link-btns .header-link-btn p {
+    line-height: 100px;
+  }
   #blog-outer #blog-inner .blog-boxs .blog-box-outer .blog-box-inner .image {
     width: 100%;
   }
