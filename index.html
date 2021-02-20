@@ -23,11 +23,14 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="font">
 </head>
 
 
 
 <body>
+
+
     <header-nav>
         <div id="header-nav-area">
             <div id="app-1" class="header-link-btns pc"> 
@@ -42,12 +45,16 @@
     </header-nav>
 
 
-
     <main>
         <div id="main-area" class="container-fluid">
             <div id="slider-outer" class="main-content-outer">
                 <div id="slider-inner" class="main-content-inner">
-                    
+                    <div id="app-2">
+                        <sliders-content v-for="slide in slides" v-key="slide.id">
+                            <img v-bind:src="slide.image" alt="">
+                            <h2>{{ text }}</h2>
+                        </sliders-content>
+                    </div>
                 </div>
             </div> 
             <div id="works-outer" class="main-content-outer">
@@ -98,18 +105,20 @@
     </main>
 
 
-
     <footer>
         <div id="footer-area">
 
         </div>
     </footer>
 
+
     <script src="scripts/app-1.js"></script>
     <script src="scripts/app-2.js"></script>
     <script src="scripts/app-3.js"></script>
     <script src="scripts/app-4.js"></script>
     <script src="scripts/app-5.js"></script>
+
+    
 </body>
 
 </html>

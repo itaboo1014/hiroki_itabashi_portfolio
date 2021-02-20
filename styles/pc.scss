@@ -1,11 +1,19 @@
-@media screen and (min-width:1024px) {
+$black: #000000;
+$offblack: #222222;
+$gray: #333333;
+$lightgray: #d0d0d0;
+$offwhite: #f4f4f4;
+$white: #fff;
+$lightblue: #00b5cc;
+$green: #008000;
 
-    @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
+@media screen and (min-width:1024px) {
 
     html {
         font-size: 10px;
         font-family: 'Noto Sans JP', sans-serif;
-        color: black;
+        background-color: $white;
+        color: $black;
     }
 
     h1 {
