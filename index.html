@@ -53,8 +53,10 @@
                 <div id="slider-inner" class="main-content-inner">
                     <div id="app-2">
                         <sliders-content v-for="slide in slides" v-key="slide.id">
-                            <img v-bind:src="slide.image" alt="">
-                            <h2>{{ slide.text }}</h2>
+                            <div class="slide" v-bind:class="slide.numberClass">
+                                <img v-bind:src="slide.image" alt="">
+                                <h2>{{ slide.text }}</h2>
+                            </div>
                         </sliders-content>
                     </div>
                 </div>
