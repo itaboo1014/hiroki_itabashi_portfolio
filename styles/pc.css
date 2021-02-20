@@ -53,6 +53,9 @@
   }
   header-nav #header-nav-area .header-link-btns .header-link-btn p {
     line-height: 100px;
+    padding: 0 20px;
+    margin: 0 10px;
+    cursor: pointer;
   }
   #blog-outer #blog-inner .blog-boxs .blog-box-outer .blog-box-inner .image {
     width: 100%;
