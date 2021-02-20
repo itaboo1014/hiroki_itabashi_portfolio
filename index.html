@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrapグリッドcssのみ -->
+    <link rel="stylesheet" href="styles/bootstrap-grid.min.css">
+    <!-- bootstrapグリッドcssのみ -->
+    <!-- リセットcss -->
+    <link rel="stylesheet" href="styles/html5_doctor_reset.css">
+    <!-- リセットcss -->
+    <!-- 初期設定css -->
+    <link rel="stylesheet" href="styles/stylesheet.min.css">
+    <!-- 初期設定css -->
+    <link rel="stylesheet" href="styles/pc.min.css">
+    <link rel="stylesheet" href="styles/tab.min.css">
+    <link rel="stylesheet" href="styles/sp.min.css">
+    <title>Who Is Hiroki Itabashi</title>
+    <link rel="shortcut icon" href="images/rec-engineer.jpg">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+
+
+<body>
+    <header-nav>
+        <div id="header-nav-area">
+            <div id="app-1" class="header-link-btns pc"> 
+                <header-link-btn v-for="btn in btns" v-key="btn.id">
+                    <p class="header-link-btn" v-bind:class="btn.class">{{ btn.name }}</p>
+                </header-link-btn>
+            </div>
+            <div class="header-menu-btn tab sp">
+                <span class=""></span>
+            </div>
+        </div>
+    </header-nav>
+
+
+
+    <main>
+        <div id="main-area" class="container-fluid">
+            <div id="slider-outer" class="main-content-outer">
+                <div id="slider-inner" class="main-content-inner">
+                    
+                </div>
+            </div> 
+            <div id="works-outer" class="main-content-outer">
+                <div id="works-inner" class="main-content-inner">
+                    <div id="app-3" class="works-boxs">
+                        <works-content v-for="work in works" v-key="work.id">
+                            <div class="work-box-outer">
+                                <a class="work-box-inner" v-bind:href="work.link">
+                                    <img class="image" v-bind:src="work.image" alt="">
+                                    <h6 class="title">{{ work.title }}</h6>
+                                    <p class="text">{{ work.text }}</p>
+                                </a>
+                            </div>
+                        </works-content>
+                    </div>
+                </div>
+            </div>
+            <div id="biography-outer" class="main-content-outer">
+                <div id="biography-inner" class="main-content-inner">    
+                    <div id="app-4">
+                        <biography-content v-for="period in biography" v-key="period.id">
+                            <div class="biography-period">
+                                <h2 class="title">{{ period.title }}</h2>
+                                <h3 class="age">{{ period.age }}</h3>
+                                <img class="image" v-bind:src="period.image" alt="">
+                                <p>{{ period.text }}</p>
+                            </div>
+                        </biography-content>
+                    </div>
+                </div>
+            </div>
+            <div id="blog-outer" class="main-content-outer">
+                <div id="blog-inner" class="main-content-inner">
+                    <div id="app-5" class="blog-boxs">
+                        <blog-content v-for="blog in blogs" v-key="blog.id">
+                            <div class="blog-box-outer">
+                                <div class="blog-box-inner">
+                                    <h2 class="title">{{ blog.title }}</h2>
+                                    <p class="text">{{ blog.text }}</p>
+                                    <img class="image" v-bind:src="blog.image">
+                                </div>
+                            </div>
+                        </blog-content>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <footer>
+        <div id="footer-area">
+
+        </div>
+    </footer>
+
+    <script src="scripts/app-1.js"></script>
+    <script src="scripts/app-2.js"></script>
+    <script src="scripts/app-3.js"></script>
+    <script src="scripts/app-4.js"></script>
+    <script src="scripts/app-5.js"></script>
+</body>
+
+</html>

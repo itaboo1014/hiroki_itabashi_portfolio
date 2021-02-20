@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrapグリッドcssのみ -->
+    <link rel="stylesheet" href="styles/bootstrap-grid.min.css">
+    <!-- bootstrapグリッドcssのみ -->
+    <!-- リセットcss -->
+    <link rel="stylesheet" href="styles/html5_doctor_reset.css">
+    <!-- リセットcss -->
+    <!-- 初期設定css -->
+    <link rel="stylesheet" href="styles/stylesheet.min.css">
+    <!-- 初期設定css -->
+    <link rel="stylesheet" href="styles/pc.min.css">
+    <link rel="stylesheet" href="styles/tab.min.css">
+    <link rel="stylesheet" href="styles/sp.min.css">
+    <title>Who Is Hiroki Itabashi</title>
+    <link rel="shortcut icon" href="images/rec-engineer.jpg">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+</head>
+
+
+
+<body>
+    <header-nav>
+        <div id="header-nav-area">
+            <div class="logo">
+                <h1>HIROKI ITABASHI</h1>
+            </div>
+            <div class="header-link-btns pc">
+                <div id="app-3">
+                    <header-link-btn v-for="btn in btns" v-key="btn.id">
+                        <p><a class="header-link-btn" v-bind:href="btn.link">{{ btn.name }}</a></p>
+                    </header-link-btn>
+                </div>
+            </div>
+            <div class="header-menu-btn tab sp">
+                <span class=""></span>
+            </div>
+        </div>
+    </header-nav>
+
+
+
+    <main>
+        <div id="main-area">
+            <div id="slider-outer" class="main-content-outer">
+                <div id="slider-inner" class="main-content-inner">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div> 
+            <div id="works-outer" class="main-content-outer">
+                <div id="works-inner" class="main-content-inner">
+                </div>
+            </div>
+            <div id="biography-outer" class="main-content-outer">
+                <div id="biography-inner" class="main-content-inner">
+                    
+                </div>
+            </div>
+            <div id="blog-outer" class="main-content-outer">
+                <div id="blog-inner" class="main-content-inner">
+                    <div id="app-1">
+                        <p>{{ message }}</p>
+                    </div>
+                    <div id="app-2" class="blog-boxs">
+                        <blog-content v-for="blog in blogs" v-key="blog.id">
+                            <div class="blog-box-outer">
+                                <div class="blog-box-inner">
+                                    <h2 class="title">{{ blog.title }}</h2>
+                                    <p class="text">{{ blog.text }}</p>
+                                    <img class="image" v-bind:src="blog.image">
+                                </div>
+                            </div>
+                        </blog-content>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <footer>
+        <div id="footer-area">
+
+        </div>
+    </footer>
+
+    <script src="scripts/app-1.js"></script>
+    <script src="scripts/app-2.js"></script>
+    <script src="scripts/app-3.js"></script>
+</body>
+
+</html>
