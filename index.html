@@ -24,6 +24,10 @@
     <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="font">
+    <!-- タイピングアニメーションCDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vue-typed-js@0.1.2/dist/vue-typed-js.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue-typed-js@0.1.2/dist/vue-typed-js.browser.js"></script>
+    <!-- タイピングアニメーションCDN -->
 </head>
 
 
@@ -49,20 +53,18 @@
 
     <main>
         <div id="main-area" class="container-fluid">
-            <div id="slider-outer" class="main-content-outer">
-                <div id="slider-inner" class="main-content-inner">
+            <div id="hero-outer" class="main-content-outer">
+                <div id="hero-inner" class="main-content-inner">
                     <div id="app-2">
-                        <sliders-content v-for="slide in slides" v-key="slide.id">
-                            <div class="slide" v-bind:class="slide.numberClass">
-                                <img src="images/hiroki-6.jpg" width="100%" height="auto" alt="">
-                                <h2>{{ slide.text }}</h2>
-                            </div>
-                        </sliders-content>
+                        <vue-typed-js :strings="['Who is Hiroki Itabashi', 'He is ...', 'Creator', 'Singer Song Writter', 'Recording Enginner', 'Front End Engineer']" :loop="true" :type-speed="100">
+                            <h1 class="typing"></h1>
+                        </vue-typed-js>
                     </div>
                 </div>
             </div> 
-            <div id="works-outer" class="main-content-outer">
-                <div id="works-inner" class="main-content-inner">
+            <div id="works-outer" class="main-content-outer container-fluid">
+                <div id="works-inner" class="main-content-inner container">
+                    <h2>WORKS</h2>
                     <div id="app-3" class="works-boxs">
                         <works-content v-for="work in works" v-key="work.id">
                             <div class="work-box-outer">
@@ -76,8 +78,9 @@
                     </div>
                 </div>
             </div>
-            <div id="biography-outer" class="main-content-outer">
-                <div id="biography-inner" class="main-content-inner">    
+            <div id="biography-outer" class="main-content-outer container-fluid">
+                <div id="biography-inner" class="main-content-inner container">
+                    <h2>BIOGRAPHY</h2>
                     <div id="app-4">
                         <biography-content v-for="period in biography" v-key="period.id">
                             <div class="biography-period">
@@ -90,8 +93,9 @@
                     </div>
                 </div>
             </div>
-            <div id="blog-outer" class="main-content-outer">
-                <div id="blog-inner" class="main-content-inner">
+            <div id="blog-outer" class="main-content-outer container-fluid">
+                <div id="blog-inner" class="main-content-inner container">
+                    <h2>BLOG</h2>
                     <div id="app-5" class="blog-boxs">
                         <blog-content v-for="blog in blogs" v-key="blog.id">
                             <div class="blog-box-outer">
