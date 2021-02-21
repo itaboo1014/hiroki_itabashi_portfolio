@@ -65,13 +65,19 @@
             <div id="works-outer" class="main-content-outer container-fluid">
                 <div id="works-inner" class="main-content-inner container">
                     <h2>WORKS</h2>
-                    <div id="app-3" class="works-boxs">
-                        <works-content v-for="work in works" v-key="work.id">
+                    <div id="app-3" class="works-boxs row">
+                        <works-content class="col-6" v-for="work in works" v-key="work.id">
                             <div class="work-box-outer">
                                 <a class="work-box-inner" v-bind:href="work.link">
-                                    <img class="image" v-bind:src="work.image" alt="">
-                                    <h6 class="title">{{ work.title }}</h6>
-                                    <p class="text">{{ work.text }}</p>
+                                    <div class="image">
+                                        <img class="image" v-bind:src="work.image" alt="">
+                                    </div>
+                                    <div class="title">
+                                        <h6 class="title">{{ work.title }}</h6>
+                                    </div>
+                                    <div class="text">
+                                        <p class="text">{{ work.text }}</p>
+                                    </div>
                                 </a>
                             </div>
                         </works-content>
