@@ -59,10 +59,55 @@
     margin: 0 10px;
     cursor: pointer;
   }
+  main #main-area .main-content-outer .main-content-inner .content-title {
+    text-align: center;
+  }
   #hero-outer #hero-inner {
     width: 100%;
     height: 540px;
     background-image: url("../images/hiroki-6.jpg");
+  }
+  #works-outer #works-inner .work-boxs {
+    width: 100%;
+    margin: 0;
+  }
+  #works-outer #works-inner .work-boxs .work-box-outer {
+    background-color: #f4f4f4;
+    width: 100%;
+    padding: 20px 0;
+    margin: 7px 0;
+    border: solid 1px #d0d0d0;
+    border-radius: 8px;
+  }
+  #works-outer #works-inner .work-boxs .work-box-outer .work-box-inner {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+  #works-outer #works-inner .work-boxs .work-box-outer .work-box-inner .image-box {
+    width: 100%;
+  }
+  #works-outer #works-inner .work-boxs .work-box-outer .work-box-inner .image-box .image {
+    width: 100%;
+    height: 100%;
+  }
+  #works-outer #works-inner .work-boxs .work-box-outer .work-box-inner .title-box .title {
+    line-height: 1.5em;
+  }
+  #works-outer #works-inner .work-boxs .work-box-outer .work-box-inner .text-box .text {
+    line-height: 1.5em;
+  }
+  #biography-outer #biography-inner .v-line {
+    margin: 0 0 0 50px;
+    border-left: solid 6px #d0d0d0;
+    z-index: -1;
+    height: auto;
+  }
+  #biography-outer #biography-inner .h-line {
+    border-bottom: solid 6px #d0d0d0;
+  }
+  #biography-outer #biography-inner .biography-period {
+    height: auto;
   }
   #blog-outer #blog-inner .blog-boxs .blog-box-outer .blog-box-inner .image {
     width: 100%;
