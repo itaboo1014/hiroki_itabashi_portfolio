@@ -108,6 +108,7 @@
   }
   #biography-outer #biography-inner .biography-period {
     height: auto;
+    padding: 50px;
   }
   #blog-outer #blog-inner .blog-boxs .blog-box-outer .blog-box-inner .image {
     width: 100%;
