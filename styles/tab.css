@@ -1,0 +1,222 @@
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  html {
+    font-size: 9px;
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: #fff;
+    color: #000000;
+  }
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 3.5rem;
+  }
+  h3 {
+    font-size: 3rem;
+  }
+  h4 {
+    font-size: 2.5rem;
+  }
+  h5 {
+    font-size: 1.8rem;
+  }
+  h6 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  a, b, i, span {
+    font-size: 1em;
+  }
+  .container-fluid {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .container {
+    width: auto;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin-right: auto;
+    margin-left: auto;
+  }
+  header-nav #header-nav-area {
+    z-index: 10;
+    position: fixed;
+    background-color: yellow;
+    width: 100%;
+    height: 80px;
+    box-shadow: 0 1.9px 2.5px rgba(0, 0, 0, 0.057), 0 5px 6.1px rgba(0, 0, 0, 0.076), 0 10.1px 11.4px rgba(0, 0, 0, 0.086), 0 19.2px 19.8px rgba(0, 0, 0, 0.092), 0 38.4px 34.8px rgba(0, 0, 0, 0.1), 0 101px 74px rgba(0, 0, 0, 0.13);
+  }
+  header-nav #header-nav-area .header-link-btns {
+    text-align: center;
+  }
+  header-nav #header-nav-area .header-link-btns .header-link-btn {
+    display: inline-block;
+  }
+  header-nav #header-nav-area .header-link-btns .header-link-btn p {
+    line-height: 100px;
+    padding: 0 20px;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  main #main-area {
+    padding-top: 80px;
+  }
+  main #main-area .main-content-outer .main-content-inner .content-title {
+    text-align: center;
+    padding: 100px 0 50px 0;
+  }
+  #hero-outer #hero-inner {
+    position: relative;
+  }
+  #hero-outer #hero-inner img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  #hero-outer #hero-inner .greeting-text {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px 20px;
+    border-radius: 8px;
+    position: absolute;
+    bottom: 20px;
+    margin: 0 auto;
+  }
+  #works-outer #works-inner .work-boxs {
+    margin: 0;
+  }
+  #works-outer #works-inner .work-boxs .work-box-outer {
+    background-color: #f4f4f4;
+    width: 100%;
+    padding: 20px 0;
+    margin: 7px 0;
+    border: solid 1px #d0d0d0;
+    border-radius: 8px;
+    box-shadow: 0 1.9px 2.5px rgba(0, 0, 0, 0.057), 0 5px 6.1px rgba(0, 0, 0, 0.076), 0 10.1px 11.4px rgba(0, 0, 0, 0.086), 0 19.2px 19.8px rgba(0, 0, 0, 0.092), 0 38.4px 34.8px rgba(0, 0, 0, 0.1), 0 101px 74px rgba(0, 0, 0, 0.13);
+  }
+  #works-outer #works-inner .work-boxs .work-box-outer .work-box-inner {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+  #works-outer #works-inner .work-boxs .work-box-outer .work-box-inner .image-box {
+    width: 100%;
+  }
+  #works-outer #works-inner .work-boxs .work-box-outer .work-box-inner .image-box .image {
+    width: 100%;
+    height: 100%;
+  }
+  #works-outer #works-inner .work-boxs .work-box-outer .work-box-inner .title-box .title {
+    line-height: 1.5em;
+  }
+  #works-outer #works-inner .work-boxs .work-box-outer .work-box-inner .text-box .text {
+    line-height: 1.5em;
+  }
+  #biography-outer {
+    height: auto;
+  }
+  #biography-outer #biography-inner .biography-contents {
+    overflow: scroll;
+    height: 500px;
+    width: 100%;
+    background-color: #f4f4f4;
+    position: relative;
+    border: solid 1px #d0d0d0;
+    border-radius: 8px;
+    box-shadow: 0 1.9px 2.5px rgba(0, 0, 0, 0.057), 0 5px 6.1px rgba(0, 0, 0, 0.076), 0 10.1px 11.4px rgba(0, 0, 0, 0.086), 0 19.2px 19.8px rgba(0, 0, 0, 0.092), 0 38.4px 34.8px rgba(0, 0, 0, 0.1), 0 101px 74px rgba(0, 0, 0, 0.13);
+  }
+  #biography-outer #biography-inner .biography-period {
+    height: auto;
+    margin: 0;
+  }
+  #biography-outer #biography-inner .biography-period .v-line {
+    border-right: solid 6px #d0d0d0;
+    height: auto;
+    z-index: -1;
+  }
+  #biography-outer #biography-inner .biography-period .h-line {
+    border-bottom: solid 6px #d0d0d0;
+  }
+  #biography-outer #biography-inner .biography-period .image-box .image {
+    position: relative;
+    left: 0;
+    width: 200%;
+    border: solid 3px #d0d0d0;
+    border-radius: 50%;
+    box-shadow: 0 1.9px 2.5px rgba(0, 0, 0, 0.057), 0 5px 6.1px rgba(0, 0, 0, 0.076), 0 10.1px 11.4px rgba(0, 0, 0, 0.086), 0 19.2px 19.8px rgba(0, 0, 0, 0.092), 0 38.4px 34.8px rgba(0, 0, 0, 0.1), 0 101px 74px rgba(0, 0, 0, 0.13);
+    margin: 40px 0;
+  }
+  #biography-outer #biography-inner .biography-period .text-box {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+  }
+  #biography-outer #biography-inner .biography-period .text-box .text {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    line-height: 1.5em;
+  }
+  #blog-outer #blog-inner .blog-boxs {
+    margin: 0;
+  }
+  #blog-outer #blog-inner .blog-boxs .blog-box-outer {
+    background-color: #f4f4f4;
+    width: 100%;
+    padding: 20px 0;
+    margin: 7px 0;
+    border: solid 1px #d0d0d0;
+    border-radius: 8px;
+    box-shadow: 0 1.9px 2.5px rgba(0, 0, 0, 0.057), 0 5px 6.1px rgba(0, 0, 0, 0.076), 0 10.1px 11.4px rgba(0, 0, 0, 0.086), 0 19.2px 19.8px rgba(0, 0, 0, 0.092), 0 38.4px 34.8px rgba(0, 0, 0, 0.1), 0 101px 74px rgba(0, 0, 0, 0.13);
+  }
+  #blog-outer #blog-inner .blog-boxs .blog-box-outer .blog-box-inner {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+  #blog-outer #blog-inner .blog-boxs .blog-box-outer .blog-box-inner .image-box {
+    width: 100%;
+  }
+  #blog-outer #blog-inner .blog-boxs .blog-box-outer .blog-box-inner .image-box .image {
+    width: 100%;
+    height: 100%;
+  }
+  #blog-outer #blog-inner .blog-boxs .blog-box-outer .blog-box-inner .title-box .title {
+    line-height: 1.5em;
+  }
+  #blog-outer #blog-inner .blog-boxs .blog-box-outer .blog-box-inner .text-box .text {
+    line-height: 1.5em;
+  }
+  #footer-area .copyright-area {
+    height: 50px;
+    background-color: #333333;
+    color: white;
+  }
+  #footer-area .copyright-area p {
+    line-height: 50px;
+    text-align: center;
+    font-size: 0.8em;
+  }
+  .pc {
+    display: none;
+  }
+  .sp {
+    display: none;
+  }
+}
