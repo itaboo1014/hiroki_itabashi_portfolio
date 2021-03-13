@@ -22,6 +22,7 @@
     <title>Who Is Hiroki Itabashi</title>
     <link rel="shortcut icon" href="images/rec-engineer.jpg">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="font">
@@ -41,7 +42,7 @@
             <div id="app-1" class="header-link-btns"> 
                 <header-btn-content v-for="btn in btns" v-key="btn.id">
                     <div class="header-link-btn" v-bind:class="btn.class">
-                        <p><b>{{ btn.name }}</b></p>
+                        <a v-bind:href="btn.link"><b>{{ btn.name }}</b></a>
                     </div>
                 </header-btn-content>
             </div>
@@ -69,7 +70,7 @@
                 <div id="works-inner" class="main-content-inner container">
                     <h2 class="content-title">WORKS</h2>
                     <div id="app-3" class="work-boxs row">
-                        <works-content class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12" v-for="work in works" v-key="work.id">
+                        <works-content class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 fadein" v-for="work in works" v-key="work.id">
                             <div class="work-box-outer">
                                 <a class="work-box-inner" v-bind:href="work.link" target="blank">
                                     <div class="image-box">
@@ -90,7 +91,7 @@
             <div id="biography-outer" class="main-content-outer container-fluid">
                 <div id="biography-inner" class="main-content-inner container">
                     <h2 class="content-title">BIOGRAPHY</h2>
-                    <div class="biography-contents">
+                    <div class="biography-contents fadein">
                         <div id="app-4">
                             <biography-content v-for="period in biography" v-key="period.id">
                                 <div class="biography-period">
@@ -127,7 +128,7 @@
                 <div id="blog-inner" class="main-content-inner container">
                     <h2 class="content-title">BLOG</h2>
                     <div id="app-5" class="blog-boxs row">
-                        <blog-content class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12" v-for="blog in blogs" v-key="blog.id">
+                        <blog-content class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 fadein" v-for="blog in blogs" v-key="blog.id">
                             <div class="blog-box-outer">
                                 <div class="blog-box-inner">
                                     <div class="image-box">
@@ -151,7 +152,7 @@
 
     <footer>
         <div id="footer-area" class="container-fluid">
-            <div class="link-area">
+            <div class="link-area fadein">
                 <div class="youtube-btn link-btn"><a href="https://www.youtube.com/channel/UCGytX-eywDw8mu6IW509p2Q?view_as=subscriber" target="_blank"><span class="fab fa-youtube"></span></a></div>
                 <div class="insta-btn link-btn"><a href="https://www.instagram.com/itaboo_music/" target="_blank"><span class="fab fa-instagram"></span></a></div>
                 <div class="twitter-btn link-btn"><a href="https://twitter.com/itaboo_music" target="_blank"><span class="fab fa-twitter"></span></a></div>
@@ -171,6 +172,9 @@
     <script src="scripts/app-3.js"></script>
     <script src="scripts/app-4.js"></script>
     <script src="scripts/app-5.js"></script>
+    <script src="scripts/scroll.js"></script>
+    <script src="scripts/fadein.js"></script>
+    
 
 
 </body>

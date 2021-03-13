@@ -82,11 +82,10 @@ $green: #008000;
                 text-align: center;
                 .header-link-btn {
                     display: inline-block;
-                    p {
+                    a {
                         line-height: 80px;
                         padding: 0 20px;
                         margin: 0 10px;
-                        cursor: pointer;
                     }
                 }
             }
