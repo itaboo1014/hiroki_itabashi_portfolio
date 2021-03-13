@@ -200,6 +200,46 @@
   #blog-outer #blog-inner .blog-boxs .blog-box-outer .blog-box-inner .text-box .text {
     line-height: 1.5em;
   }
+  #footer-area .link-area {
+    margin: 50px 0;
+    text-align: center;
+  }
+  #footer-area .link-area .link-btn {
+    padding: 20px;
+    border-radius: 100%;
+    display: inline-block;
+    margin: 10px;
+    box-shadow: 2px 2px 4px gray;
+    position: relative;
+  }
+  #footer-area .link-area .link-btn a {
+    font-size: 2em;
+    padding: 10px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  #footer-area .link-area .link-btn a:hover {
+    transition: 0.2s;
+    opacity: 0.9;
+    font-size: 2.5em;
+  }
+  #footer-area .link-area .youtube-btn {
+    background-color: red;
+  }
+  #footer-area .link-area .insta-btn {
+    background: linear-gradient(-135deg, #E4A972, #9941D8);
+  }
+  #footer-area .link-area .twitter-btn {
+    background-color: #00cece;
+  }
+  #footer-area .link-area .mail-btn {
+    background-color: lightgreen;
+  }
   #footer-area .copyright-area {
     height: 50px;
     background-color: #333333;
