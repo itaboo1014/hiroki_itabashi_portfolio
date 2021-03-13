@@ -83,9 +83,10 @@ $green: #008000;
                 .header-link-btn {
                     display: inline-block;
                     a {
+                        font-size: 2em;
                         line-height: 100px;
                         padding: 0 20px;
-                        margin: 0 10px;
+                        margin: 0 50px;
                     }
                 }
             }
@@ -99,7 +100,7 @@ $green: #008000;
                 .main-content-inner {
                     .content-title {
                         text-align: center;
-                        margin: 100px 0 50px 0;
+                        padding: 150px 0 50px 0;
                     }
                 }
             }
@@ -121,7 +122,7 @@ $green: #008000;
                 border-radius: 8px;
                 position: absolute;
                 bottom: 50px;
-                margin: 0 auto;
+                margin: 0 200px;
                 .typing {
 
                 }
@@ -346,6 +347,27 @@ $green: #008000;
                 text-align: center;
                 font-size: 0.8em;
             }
+        }
+    }
+
+    .head-return-btn {
+        z-index: 100;
+        position: fixed;
+        bottom: 70px;
+        right: 20px;
+        font-size: 7em;
+        border-radius: 50%;
+        box-shadow:
+            0 1.9px 2.5px rgba(0, 0, 0, 0.057),
+            0 5px 6.1px rgba(0, 0, 0, 0.076),
+            0 10.1px 11.4px rgba(0, 0, 0, 0.086),
+            0 19.2px 19.8px rgba(0, 0, 0, 0.092),
+            0 38.4px 34.8px rgba(0, 0, 0, 0.1),
+            0 101px 74px rgba(0, 0, 0, 0.13);
+        a, span {
+            color: $gray;
+            background-color: white;
+            border-radius: 50%;
         }
     }
     
