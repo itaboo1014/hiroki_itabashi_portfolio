@@ -1,0 +1,347 @@
+$black: #000000;
+$offblack: #202020;
+$gray: #333333;
+$lightgray: #d0d0d0;
+$offwhite: #f4f4f4;
+$white: #fff;
+$lightblue: #00b5cc;
+$green: #008000;
+
+
+
+@media screen and (min-width:992px) {
+
+    html {
+        font-size: 10px;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+
+    #loading {
+        background-color: #28505D;
+        z-index: 100;
+        width: 100%;
+        height: 100vh;
+        
+        .planePath {
+            stroke: #D9DADA;
+            stroke-width: .1%;
+            stroke-width: .5%;
+            stroke-dasharray: 1% 2%;
+            stroke-linecap: round;
+            fill: none;
+        }
+        
+        .fil1 {
+            fill: #D9DADA;
+        }
+        
+        .fil2 {
+            fill: #C5C6C6;
+        }
+        
+        .fil4 {
+            fill: #9D9E9E;
+        }
+        
+        .fil3 {
+            fill: #AEAFB0;
+        }
+    }
+
+    #wrap {
+        display: none;
+        background-color: $white;
+        color: $black;
+        margin: 0;
+        padding: 0;
+        min-height: 100%;
+
+        h1 {
+            font-size: 4rem;
+        }
+        h2 {
+            font-size: 3.5rem;
+        }
+        h3 {
+            font-size: 3rem;
+        }
+        h4 {
+            font-size: 2.5rem;
+        }
+        h5 {
+            font-size: 1.8rem;
+        }
+        h6 {
+            font-size: 1.5rem;
+        }
+        p {
+            font-size: 1.5rem;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        a,b,i,span {
+            font-size: 1em;
+        }
+        
+        .container-fluid {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+        .inner {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 100px 0;
+            .blog-paper {
+                padding: 100px;
+                background-color: $offwhite;
+                font-family: "Sawarabi Gothic";
+                box-shadow:
+                    0 1.9px 2.5px rgba(0, 0, 0, 0.057),
+                    0 5px 6.1px rgba(0, 0, 0, 0.076),
+                    0 10.1px 11.4px rgba(0, 0, 0, 0.086),
+                    0 19.2px 19.8px rgba(0, 0, 0, 0.092),
+                    0 38.4px 34.8px rgba(0, 0, 0, 0.1),
+                    0 101px 74px rgba(0, 0, 0, 0.13);
+                .blog-top, .blog-title {
+                    text-align: center;
+                    line-height: 2em;
+                }
+                .blog-date {
+                    text-align: right;
+                    line-height: 2em;
+                }
+                .blog-text {
+                        line-height: 2em;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+
+    html {
+        font-size: 9px;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+
+    #loading {
+            background-color: #28505D;
+            z-index: 100;
+            width: 100%;
+            height: 100vh;
+        
+        .planePath {
+            stroke: #D9DADA;
+            stroke-width: .1%;
+            stroke-width: .5%;
+            stroke-dasharray: 1% 2%;
+            stroke-linecap: round;
+            fill: none;
+        }
+        
+        .fil1 {
+            fill: #D9DADA;
+        }
+        
+        .fil2 {
+            fill: #C5C6C6;
+        }
+        
+        .fil4 {
+            fill: #9D9E9E;
+        }
+        
+        .fil3 {
+            fill: #AEAFB0;
+        }
+    }
+    
+    #wrap {
+        display: none;
+        background-color: $white;
+        color: $black;
+        margin: 0;
+        padding: 0;
+        min-height: 100%;
+    
+        h1 {
+            font-size: 4rem;
+        }
+        h2 {
+            font-size: 3.5rem;
+        }
+        h3 {
+            font-size: 3rem;
+        }
+        h4 {
+            font-size: 2.5rem;
+        }
+        h5 {
+            font-size: 1.8rem;
+        }
+        h6 {
+            font-size: 1.5rem;
+        }
+        p {
+            font-size: 1.5rem;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        a,b,i,span {
+            font-size: 1em;
+        }
+        
+        .container-fluid {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+        .inner {
+            padding: 50px;
+            .blog-paper {
+                padding: 50px;
+                background-color: $offwhite;
+                font-family: "Sawarabi Gothic";
+                box-shadow:
+                    0 1.9px 2.5px rgba(0, 0, 0, 0.057),
+                    0 5px 6.1px rgba(0, 0, 0, 0.076),
+                    0 10.1px 11.4px rgba(0, 0, 0, 0.086),
+                    0 19.2px 19.8px rgba(0, 0, 0, 0.092),
+                    0 38.4px 34.8px rgba(0, 0, 0, 0.1),
+                    0 101px 74px rgba(0, 0, 0, 0.13);
+                .blog-top, .blog-title {
+                    text-align: center;
+                    line-height: 2em;
+                }
+                .blog-date {
+                    text-align: right;
+                    line-height: 2em;
+                }
+                .blog-text {
+                    line-height: 2em;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:767px) {
+
+    html {
+        font-size: 8px;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+
+    #loading {
+        background-color: #28505D;
+        z-index: 100;
+        width: 100%;
+        height: 100vh;
+        
+        .planePath {
+            stroke: #D9DADA;
+            stroke-width: .1%;
+            stroke-width: .5%;
+            stroke-dasharray: 1% 2%;
+            stroke-linecap: round;
+            fill: none;
+        }
+        
+        .fil1 {
+            fill: #D9DADA;
+        }
+        
+        .fil2 {
+            fill: #C5C6C6;
+        }
+        
+        .fil4 {
+            fill: #9D9E9E;
+        }
+        
+        .fil3 {
+            fill: #AEAFB0;
+        }
+    }
+
+    #wrap {
+        display: none;
+        background-color: $white;
+        color: $black;
+        margin: 0;
+        padding: 0;
+        min-height: 100%;
+
+        h1 {
+            font-size: 4rem;
+        }
+        h2 {
+            font-size: 3.5rem;
+        }
+        h3 {
+            font-size: 3rem;
+        }
+        h4 {
+            font-size: 2.5rem;
+        }
+        h5 {
+            font-size: 1.8rem;
+        }
+        h6 {
+            font-size: 1.5rem;
+        }
+        p {
+            font-size: 1.5rem;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        a,b,i,span {
+            font-size: 1em;
+        }
+        
+        .container-fluid {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+        .inner {
+            padding: 20px;
+            .blog-paper {
+                padding: 20px;
+                background-color: $offwhite;
+                font-family: "Sawarabi Gothic";
+                box-shadow:
+                    0 1.9px 2.5px rgba(0, 0, 0, 0.057),
+                    0 5px 6.1px rgba(0, 0, 0, 0.076),
+                    0 10.1px 11.4px rgba(0, 0, 0, 0.086),
+                    0 19.2px 19.8px rgba(0, 0, 0, 0.092),
+                    0 38.4px 34.8px rgba(0, 0, 0, 0.1),
+                    0 101px 74px rgba(0, 0, 0, 0.13);
+                .blog-top, .blog-title {
+                    text-align: center;
+                    line-height: 2em;
+                }
+                .blog-date {
+                    text-align: right;
+                    line-height: 2em;
+                }
+                .blog-text {
+                        line-height: 2em;
+                }
+            }
+        }
+
+    }    
+    
+}
+
+
