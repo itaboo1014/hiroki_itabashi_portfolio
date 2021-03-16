@@ -3,7 +3,7 @@ $(window).scroll(function (){
         var elemPos = $(this).offset().top,
             scroll = $(window).scrollTop(),
             windowHeight = $(window).height();
-        if (scroll > elemPos - windowHeight + 100){
+        if (scroll > elemPos - windowHeight + 50){
             $(this).addClass('scrollin');
         }
     });
@@ -12,7 +12,7 @@ $(window).scroll(function (){
 $(document).ready(function () {
     $(".head-return-btn").hide();　//ボタンを非表示にする
     $(window).on("scroll", function () {
-        if ($(this).scrollTop() > 100) { //ページの上から100pxスクロールした時
+        if ($(this).scrollTop() > 200) { //ページの上から100pxスクロールした時
             $(".head-return-btn").fadeIn("fast"); //ボタンがフェードインする
         } else {
             $(".head-return-btn").fadeOut("fast");　//ボタンがフェードアウトする
