@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="styles/pc.min.css">
     <link rel="stylesheet" href="styles/tab.min.css">
     <link rel="stylesheet" href="styles/sp.min.css">
-    <link rel="stylesheet" href="styles/bg.min.css">
+    <link rel="stylesheet" href="styles/bg-white-box.min.css">
     <title>Who Is Hiroki Itabashi</title>
     <link rel="shortcut icon" href="images/itaboo-records-big.jpg">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
@@ -36,153 +36,155 @@
 
 
 <body>
+    <div id="bg-white-box">
 
-
-    <header-nav>
-        <div id="header-nav-area" class="container-fluid">
-            <div id="app-1" class="header-link-btns"> 
-                <header-btn-content v-for="btn in btns" v-key="btn.id">
-                    <div class="header-link-btn" v-bind:class="btn.class">
-                        <a v-bind:href="btn.link"><b>{{ btn.name }}</b></a>
-                    </div>
-                </header-btn-content>
+        <header-nav>
+            <div id="header-nav-area" class="container-fluid">
+                <div id="app-1" class="header-link-btns"> 
+                    <header-btn-content v-for="btn in btns" v-key="btn.id">
+                        <div class="header-link-btn" v-bind:class="btn.class">
+                            <a v-bind:href="btn.link"><b>{{ btn.name }}</b></a>
+                        </div>
+                    </header-btn-content>
+                </div>
             </div>
-        </div>
-    </header-nav>
+        </header-nav>
 
 
-    <main>
-        <div id="main-area" class="container-fluid">
-            <div id="hero-outer" class="main-content-outer">
-                <div id="hero-inner" class="main-content-inner">
-                    <img class="pc" src="images/hiroki-6.jpg" alt="">
-                    <img class="tab" src="images/hiroki-6.jpg" alt="">
-                    <img class="sp" src="images/hiroki-7.jpg" alt="">
-                    <div class="greeting-text">
-                        <div id="app-2">
-                            <vue-typed-js :strings="['', '', '初めまして！！', '板橋弘来と申します。', '', '一人前のフロントエンドエンジニアを目指して、某WEB・EC制作会社でフロントの開発をしている21歳、大学三年生です！', '今回はポートフォリオサイトを作成してみました。', '是非ゆっくりご覧ください！！', '' , 'このサイトはHTML5、CSS3、JavaScriptを使用しています。', 'CSSはsass、JavaScriptにはVue.js、jQueryを使用しています。',　'',　'']" :type-speed="60">
-                                <h3 class="typing"></h3>
-                            </vue-typed-js>
+        <main>
+            <div id="main-area" class="container-fluid">
+                <div id="hero-outer" class="main-content-outer">
+                    <div id="hero-inner" class="main-content-inner">
+                        <img class="pc" src="images/hiroki-6.jpg" alt="">
+                        <img class="tab" src="images/hiroki-6.jpg" alt="">
+                        <img class="sp" src="images/hiroki-7.jpg" alt="">
+                        <div class="greeting-text">
+                            <div id="app-2">
+                                <vue-typed-js :strings="['', '', '初めまして！！', '板橋弘来と申します。', '', '一人前のフロントエンドエンジニアを目指して、某WEB・EC制作会社でフロントの開発をしている21歳、大学三年生です！', '今回はポートフォリオサイトを作成してみました。', '是非ゆっくりご覧ください！！', '' , 'このサイトはHTML5、CSS3、JavaScriptを使用しています。', 'CSSはsass、JavaScriptにはVue.js、jQueryを使用しています。',　'',　'']" :type-speed="60">
+                                    <h3 class="typing"></h3>
+                                </vue-typed-js>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div id="works-outer" class="main-content-outer container-fluid">
-                <div id="works-inner" class="main-content-inner container">
-                    <h2 class="content-title">WORKS</h2>
-                    <div id="app-3" class="work-boxs row">
-                        <works-content class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 fadein" v-for="work in works" v-key="work.id">
-                            <div class="work-box-outer">
-                                <a class="work-box-inner" v-bind:href="work.link" target="blank">
-                                    <div class="image-box">
-                                        <img class="image" v-bind:src="work.image" width="750" height="400" alt="">
-                                    </div>
-                                    <div class="title-box">
-                                        <h5 class="title">{{ work.title }}</h5>
-                                    </div>
-                                    <div class="text-box">
-                                        <p class="text">{{ work.text }}</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </works-content>
+                <div id="works-outer" class="main-content-outer container-fluid">
+                    <div id="works-inner" class="main-content-inner container">
+                        <h2 class="content-title">WORKS</h2>
+                        <div id="app-3" class="work-boxs row">
+                            <works-content class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 fadein" v-for="work in works" v-key="work.id">
+                                <div class="work-box-outer">
+                                    <a class="work-box-inner" v-bind:href="work.link" target="blank">
+                                        <div class="image-box">
+                                            <img class="image" v-bind:src="work.image" width="750" height="400" alt="">
+                                        </div>
+                                        <div class="title-box">
+                                            <h5 class="title">{{ work.title }}</h5>
+                                        </div>
+                                        <div class="text-box">
+                                            <p class="text">{{ work.text }}</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </works-content>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div id="biography-outer" class="main-content-outer container-fluid">
-                <div id="biography-inner" class="main-content-inner container">
-                    <h2 class="content-title">BIOGRAPHY</h2>
-                    <div class="biography-contents fadein">
-                        <div id="app-4">
-                            <biography-content v-for="period in biography" v-key="period.id">
-                                <div class="biography-period">
-                                    <div class="row">
-                                        <div class="col-1 col-lg-2"></div>
-                                        <div class="col-2 col-lg-1">
-                                            <div class="v-line">
-                                                <div class="image-box">
-                                                    <img class="image" v-bind:src="period.image" alt="">
+                <div id="biography-outer" class="main-content-outer container-fluid">
+                    <div id="biography-inner" class="main-content-inner container">
+                        <h2 class="content-title">BIOGRAPHY</h2>
+                        <div class="biography-contents fadein">
+                            <div id="app-4">
+                                <biography-content v-for="period in biography" v-key="period.id">
+                                    <div class="biography-period">
+                                        <div class="row">
+                                            <div class="col-1 col-lg-2"></div>
+                                            <div class="col-2 col-lg-1">
+                                                <div class="v-line">
+                                                    <div class="image-box">
+                                                        <img class="image" v-bind:src="period.image" alt="">
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="col-2"></div>
-                                        <div class="col-6 col-lg-5">
-                                            <div class="title-box">
-                                                <h3 class="title">{{ period.title }}</h3>
+                                            <div class="col-2"></div>
+                                            <div class="col-6 col-lg-5">
+                                                <div class="title-box">
+                                                    <h3 class="title">{{ period.title }}</h3>
+                                                </div>
+                                                <div class="age-box">
+                                                    <h4 class="age">{{ period.age }}</h4>
+                                                </div>
+                                                <div class="text-box">
+                                                    <p class="text">{{ period.text1 }}<br>{{ period.text2 }}<br>{{ period.text3 }}</p>
+                                                </div>
                                             </div>
-                                            <div class="age-box">
-                                                <h4 class="age">{{ period.age }}</h4>
+                                            <div class="col-1 col-lg-2"></div>
+                                        </div>
+                                    </div>
+                                </biography-content>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="blog-outer" class="main-content-outer container-fluid">
+                    <div id="blog-inner" class="main-content-inner container">
+                        <h2 class="content-title">BLOG</h2>
+                        <div id="app-5" class="blog-boxs row">
+                            <blog-content class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 fadein" v-for="blog in blogs" v-key="blog.id">
+                                <a v-bind:href="blog.link" target="blank">
+                                    <div class="blog-box-outer">
+                                        <div class="blog-box-inner">
+                                            <div class="image-box">
+                                                <img class="image" v-bind:src="blog.image">
+                                            </div>
+                                            <div class="title-box">
+                                                <h5 class="title">{{ blog.title }}</h5>
                                             </div>
                                             <div class="text-box">
-                                                <p class="text">{{ period.text1 }}<br>{{ period.text2 }}<br>{{ period.text3 }}</p>
+                                                <p class="text">{{ blog.text }}</p>
                                             </div>
                                         </div>
-                                        <div class="col-1 col-lg-2"></div>
                                     </div>
-                                </div>
-                            </biography-content>
+                                </a>
+                            </blog-content>
                         </div>
                     </div>
                 </div>
             </div>
-            <div id="blog-outer" class="main-content-outer container-fluid">
-                <div id="blog-inner" class="main-content-inner container">
-                    <h2 class="content-title">BLOG</h2>
-                    <div id="app-5" class="blog-boxs row">
-                        <blog-content class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 fadein" v-for="blog in blogs" v-key="blog.id">
-                            <div class="blog-box-outer">
-                                <div class="blog-box-inner">
-                                    <div class="image-box">
-                                        <img class="image" v-bind:src="blog.image">
-                                    </div>
-                                    <div class="title-box">
-                                        <h5 class="title">{{ blog.title }}</h5>
-                                    </div>
-                                    <div class="text-box">
-                                        <p class="text">{{ blog.text }}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </blog-content>
+        </main>
+
+
+        <footer>
+            <div id="footer-area" class="container-fluid">
+                <div class="link-area fadein">
+                    <div class="youtube-btn link-btn"><a href="https://www.youtube.com/channel/UCGytX-eywDw8mu6IW509p2Q?view_as=subscriber" target="_blank"><span class="fab fa-youtube"></span></a></div>
+                    <div class="insta-btn link-btn"><a href="https://www.instagram.com/itaboo_music/" target="_blank"><span class="fab fa-instagram"></span></a></div>
+                    <div class="twitter-btn link-btn"><a href="https://twitter.com/itaboo_music" target="_blank"><span class="fab fa-twitter"></span></a></div>
+                    <div class="mail-btn link-btn"><a href="mailto:itaboo.1014@gmail.com?subject=件名" target="_blank"><span class="fa fa-envelope"></span></a></div>
+                </div>
+                <div class="copyright-area">
+                    <div class="container">
+                        <p>Copyright © 2021 Hiroki Itabashi Inc. All Rights Reserved.</p>
                     </div>
                 </div>
             </div>
+        </footer>
+
+        <div class="head-return-btn">
+            <a href="#main-area"><span class="fa fa-arrow-circle-up" aria-hidden="true"></span></a>
         </div>
-    </main>
 
 
-    <footer>
-        <div id="footer-area" class="container-fluid">
-            <div class="link-area fadein">
-                <div class="youtube-btn link-btn"><a href="https://www.youtube.com/channel/UCGytX-eywDw8mu6IW509p2Q?view_as=subscriber" target="_blank"><span class="fab fa-youtube"></span></a></div>
-                <div class="insta-btn link-btn"><a href="https://www.instagram.com/itaboo_music/" target="_blank"><span class="fab fa-instagram"></span></a></div>
-                <div class="twitter-btn link-btn"><a href="https://twitter.com/itaboo_music" target="_blank"><span class="fab fa-twitter"></span></a></div>
-                <div class="mail-btn link-btn"><a href="mailto:itaboo.1014@gmail.com?subject=件名" target="_blank"><span class="fa fa-envelope"></span></a></div>
-            </div>
-            <div class="copyright-area">
-                <div class="container">
-                    <p>Copyright © 2021 Hiroki Itabashi Inc. All Rights Reserved.</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+        <script src="scripts/app-1.js"></script>
+        <script src="scripts/app-2.js"></script>
+        <script src="scripts/app-3.js"></script>
+        <script src="scripts/app-4.js"></script>
+        <script src="scripts/app-5.js"></script>
+        <script src="scripts/scroll.js"></script>
+        <script src="scripts/fadein.js"></script>
+        <script src="scripts/match_height.js"></script>
+        
 
-    <div class="head-return-btn">
-        <a href="#main-area"><span class="fa fa-arrow-circle-up" aria-hidden="true"></span></a>
     </div>
-
-
-    <script src="scripts/app-1.js"></script>
-    <script src="scripts/app-2.js"></script>
-    <script src="scripts/app-3.js"></script>
-    <script src="scripts/app-4.js"></script>
-    <script src="scripts/app-5.js"></script>
-    <script src="scripts/scroll.js"></script>
-    <script src="scripts/fadein.js"></script>
-    <script src="scripts/match_height.js"></script>
-    
-
-
 </body>
 
 </html>
